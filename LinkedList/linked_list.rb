@@ -86,7 +86,7 @@ class LinkedList
       raise "#{elem} not find in list"
     elsif @head.data == elem
       @head = @head.next
-      @size += 1
+      @size -= 1
       return true
     else
       ancestor = @head
@@ -96,7 +96,7 @@ class LinkedList
         if pointer.data == elem
           ancestor.next = pointer.next
           pointer.next = nil
-          @size += 1
+          @size -= 1
           return true
         end
 
