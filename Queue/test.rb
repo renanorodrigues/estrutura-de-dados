@@ -1,10 +1,10 @@
-require_relative 'stack.rb'
+require_relative 'queue.rb'
 require 'pry'
 
-stack = Stack.new
-stack.push 2
-stack.push "Renan"
-stack.push false
-stack.pop
+queue = Queue.new
+queue.push 2
+queue.push "Renan"
+queue.push false
+queue.pop
 binding.pry
-stack.peek
+queue.peek

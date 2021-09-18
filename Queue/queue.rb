@@ -18,15 +18,23 @@ class Queue
     end
 
     @first = node if @first.nil?
-
     @size += 1
+    node.data
   end
 
   def pop
+    if @size > 0
+      nodeRemoved = @first
+      @first = @first.next
+      @size -= 1
+      nodeRemoved.data
+    else
+      raise "Queue has not nodes to remove!"
+    end
   end
 
   def peek
-    @top.data if @size > 0
+    @first.data if @size > 0
   end
 
   def length
