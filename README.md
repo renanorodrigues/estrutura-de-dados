@@ -14,7 +14,7 @@ git clone https://github.com/renanorodrigues/estrutura-de-dados.git
 
 3. Build this image
 ```
-docker build -t <your-image-name-ruby>
+docker build -t <your-image-name-ruby> .
 ```
 
 4. Run the container with shell
