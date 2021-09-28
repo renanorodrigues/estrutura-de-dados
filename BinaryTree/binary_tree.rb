@@ -1,23 +1,23 @@
 require_relative 'node.rb'
 
 class BinaryTree
-  def initialize(data=nil)
-    @root = data.nil? ? data : Node.new(data)
+  attr_accessor :root
+
+  def initialize(data=nil, node=nil)
+    if node
+      @root = node
+    elsif data
+      @root = Node.new(data)
+    else
+      @root = nil
+    end
   end
 
   def simetric_traversal(node=nil)
     node = @root if node.nil?
 
-    if node.left
-      puts("(")
-      simetric_traversal(node.left)
-    end
-
-    puts node
-
-    if node.right
-      simetric_traversal(node.right)
-      puts(")")
-    end
+    self.simetric_traversal(node.left) if node.left
+    puts node.data
+    self.simetric_traversal(node.right) if node.right
   end
 end
