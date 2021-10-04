@@ -14,8 +14,9 @@ n1.left = n2
 n1.right = n3
 tree.root = n1
 
-tree.simetric_traversal
-# -----------------------------------------------------
+# tree.simetric_traversal
+tree.height_tree
+puts "--------------------------------------------------"
 
 tree2 = BinaryTree.new(19)
 tree2.root.left = Node.new(2)
