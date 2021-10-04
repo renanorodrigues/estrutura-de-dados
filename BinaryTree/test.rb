@@ -7,14 +7,17 @@ n2 = Node.new('B')
 n3 = Node.new('C')
 n4 = Node.new('D')
 n5 = Node.new('E')
+n6 = Node.new('F')
 
+n5.right = n6
 n3.left = n4
 n3.right = n5
 n1.left = n2
 n1.right = n3
 tree.root = n1
 
-# tree.simetric_traversal
+puts "Post Order Traversal:"
+tree.postorder_traversal
 tree.height_tree
 puts "--------------------------------------------------"
 
