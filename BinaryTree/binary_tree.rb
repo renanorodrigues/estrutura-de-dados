@@ -13,12 +13,12 @@ class BinaryTree
     end
   end
 
-  def simetric_traversal(node=nil)
+  def inorder_traversal(node=nil)
     node = @root if node.nil?
 
-    self.simetric_traversal(node.left) if node.left
+    self.inorder_traversal(node.left) if node.left
     puts node.data
-    self.simetric_traversal(node.right) if node.right
+    self.inorder_traversal(node.right) if node.right
   end
 
   def postorder_traversal(node=nil)
