@@ -1,9 +1,8 @@
 # Data structure
 
-Learning some basic data structures and make examples using Ruby as programming language
+Learning some basic data structures and make examples
 
 ## Tutorial
-If you don't want to install Ruby, run this exercises with Docker. Or just install Ruby in your machine.
 
 1. Install Docker in your machine
 https://docs.docker.com/engine/install/ubuntu/
@@ -23,7 +22,8 @@ docker build -t data-structure .
 docker run --rm -it data-structure sh
 ```
 
-5. Execute any scripts in ruby!
+## Notes
+You can execute any scripts in ruby after run the shell in container. Just do that:
 ```
 ruby <script.rb>
 ```
