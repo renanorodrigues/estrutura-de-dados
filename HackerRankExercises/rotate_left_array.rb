@@ -10,16 +10,11 @@
 def rotateLeft(d, arr)
   # Write your code here
   times_rotate = d
-  new_arr = []
+  new_arr = arr.map(&:clone)
 
   times_rotate.times do
-    new_arr = arr.map(&:clone)
-    
-    arr.each_with_index do |element, index|
-      new_arr[index - 1] = element 
-    end
-    
-    arr = new_arr.map(&:clone)
+    last_elem = new_arr.shift
+    new_arr.unshift last_elem
   end
 
   new_arr
