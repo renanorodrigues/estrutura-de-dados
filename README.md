@@ -14,12 +14,12 @@ git clone https://github.com/renanorodrigues/estrutura-de-dados.git
 
 3. Build this image
 ```
-docker build -t data-structure .
+docker-compose build
 ```
 
 4. Run the container with shell
 ```
-docker run --rm -it data-structure sh
+docker-compose run --rm app sh
 ```
 
 ## Notes
