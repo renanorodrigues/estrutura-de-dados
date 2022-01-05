@@ -17,7 +17,7 @@ class BinarySearchTree < BinaryTree
       end
     end
 
-    # Setando o nó a depender do valor na subárvore correta do pai
+    # Setando o nó a depender do valor armazenado do nó pai
     if parent_node.nil?
       @root = Node.new(value)
     elsif value < parent_node.data
