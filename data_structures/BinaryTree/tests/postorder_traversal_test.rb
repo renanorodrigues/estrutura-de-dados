@@ -1,5 +1,4 @@
-require_relative 'binary_tree.rb'
-require_relative 'binary_search_tree.rb'
+require_relative '../binary_tree.rb'
 require 'pry'
 
 # How works?
